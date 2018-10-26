@@ -23,3 +23,7 @@ function investir(passo) {
 }
 
 investir(passo);
+
+function show_or_hide(evt) {
+    console.log(evt)
+};
