@@ -24,6 +24,12 @@ function investir(passo) {
 
 //investir(passo);
 
-function show_or_hide(evt) {
-    console.log(evt)
+function show_or_hide(id) {
+    var element = document.getElementById(id)
+    if (element.className == "row") {
+        element.className = "row hide"
+    }
+    else {
+        element.className = "row"
+    }
 };
