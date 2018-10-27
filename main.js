@@ -24,21 +24,18 @@ function investir(passo) {
 
 //investir(passo);
 
-function hide_all() {
-    document.getElementById("01").className = "row hide"
-    document.getElementById("02").className = "row hide"
-    document.getElementById("03").className = "row hide"
-    document.getElementById("04").className = "row hide"
-    document.getElementById("05").className = "row hide"
-    document.getElementById("06").className = "row hide"
-    document.getElementById("07").className = "row hide"
-    document.getElementById("08").className = "row hide"
-    document.getElementById("09").className = "row hide"
-    document.getElementById("10").className = "row hide"
+var idList = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"]
+
+function hide_all(idSkip) {
+    idList.map(function(id) {
+        if (idSkip != id) {
+            document.getElementById(id).className = "row hide"
+        }
+    })
 };
 
 function show_or_hide(id) {
-    hide_all()
+    hide_all(id)
     var element = document.getElementById(id)
     if (element.className == "row") {
         element.className = "row hide"
