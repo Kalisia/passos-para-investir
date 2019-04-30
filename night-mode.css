@@ -1,0 +1,8 @@
+.night-mode {
+    color: #ddd;
+    background: #2b2b2b;
+}
+
+.night-mode .btn {
+    background-color: #425a58;
+}
